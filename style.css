@@ -194,11 +194,11 @@ nav {
   background: goldenrod;
   position: absolute;
   top: 55px;
-  translate: -32px 0;
+  translate: -58px 0;
   transition: width 0.5s ease-out;
 }
 #navLink2.is-on::after {
-  width: 34px;
+  width: 58px;
 }
 
 #navLink3::after {
@@ -397,16 +397,22 @@ section {
   line-height: 23px;
   color: beige;
   text-shadow: 0 0 20px black, 0 0 40px black;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 8px;
+  justify-content: center; */
+  position: relative;
+  top: 100px;
+  
 }
 
 .lineSec2 {
   width: 15vw;
   height: 1px;
   margin: 20px 0 20px 0;
+  position: relative;
+  top: 100px;
+  
+
 }
 #content2.lineSec2 {
   background: linear-gradient(60deg, #b721ff, #26ff9d, #ffec19, #ff417a);
@@ -979,6 +985,8 @@ section {
   align-items: center;
   max-width: 24px;
   margin-bottom: 20vh;
+  
+  
 }
 .nextButton2 {
   display: flex;
@@ -986,6 +994,9 @@ section {
   align-items: center;
   max-width: 30px;
   scale: 0.6;
+  position: relative;
+  top: 90px;
+  
 }
 .next {
   width: 2px;

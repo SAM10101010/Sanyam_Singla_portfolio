@@ -546,6 +546,12 @@ document
 
 // SOUND TOGGLE
 const backgroundSound = new Audio("./audios/suzume.mp3");
+backgroundSound.play();
+backgroundSound.volume = 0.5;
+backgroundSound.loop = true;
+
+document.querySelector(".sound").style.backgroundImage = "url('./icons/icon-sound-96.png')";
+document.querySelector(".sound").style.opacity = 0.2;
 let soundOn = true;
 
 document.querySelector(".sound").addEventListener("click", function(event) {
@@ -564,14 +570,7 @@ document.querySelector(".sound").addEventListener("click", function(event) {
   }
 });
 
-// Auto-play the background sound and set the initial state of the sound logo when the page loads
-window.addEventListener('load', function() {
-  backgroundSound.play();
-  backgroundSound.volume = 0.5;
-  backgroundSound.loop = true;
-  document.querySelector(".sound").style.backgroundImage = "url('./icons/icon-sound-96.png')";
-  document.querySelector(".sound").style.opacity = 0.2;
-});
+
 
 
 //WHOOSH SOUND
